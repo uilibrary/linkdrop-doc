@@ -18,7 +18,7 @@ const config: DocsThemeConfig = {
     const { asPath } = useRouter();
     if (asPath !== "/") {
       return {
-        titleTemplate: "%s – Nextra",
+        titleTemplate: "%s – Doc",
       };
     }
   },
@@ -34,20 +34,14 @@ const config: DocsThemeConfig = {
         <meta httpEquiv="Content-Language" content="en" />
         <meta
           name="description"
-          content="Make beautiful websites with Next.js & MDX."
+          content="Setup LinkDrop easily by following this documentation."
         />
         <meta
           name="og:description"
-          content="Make beautiful websites with Next.js & MDX."
+          content="Setup LinkDrop easily by following this documentation."
         />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site:domain" content="nextra.site" />
-        <meta name="twitter:url" content="https://nextra.site" />
-        <meta
-          name="og:title"
-          content={title ? title + " – Nextra" : "Nextra"}
-        />
-        <meta name="apple-mobile-web-app-title" content="Nextra" />
+        <meta name="og:title" content={title ? title + " – Doc" : "Doc"} />
+        <meta name="apple-mobile-web-app-title" content="LinkDrop" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon.png" type="image/png" />
         <link
