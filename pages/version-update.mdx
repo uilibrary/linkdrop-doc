@@ -1,0 +1,83 @@
+import { Card, Cards } from "nextra-theme-docs";
+
+#### Please follow these steps, To Update your application
+
+Note: If you have made any changes in the code manually then your changes will be lost.
+
+**Step 1 :** Take back up of your current version source code and database. First you need to copy all the files and folders without following these.
+
+<ul className="list-disc pl-6 my-4">
+  <li>
+    First you need to copy all the files and folders without following these.
+    <p>`file : .env`</p>
+    <p>`Folder : backup`</p>
+    <p>`Folder : .well-known`</p>
+  </li>
+  <li>
+    Then paste all copied files and folders inside this path
+    `app/backup/your_folder/source-code`
+  </li>
+  <li>
+    Then delete all the files and folders without following these from root of
+    server. `app/backup/your_folder/source-code`
+    <p>`file : .env`</p>
+    <p>`Folder : backup`</p>
+    <p>`Folder : .well-known`</p>
+  </li>
+</ul>
+
+<p className="mb-4">
+  **Step 2 :** Then upload your new version zip file of LinkDrop in your server
+</p>
+<p className="mb-4">
+  **Step 3 :** Now extract zip file in root of your LinkDrop server
+</p>
+<p className="mb-4">
+  **Step 4 :** Now you need copy all uploaded files from your previous version
+  from backup folder. Go to `app/backup/your_folder/source-code/public/upload`
+  then copy all files and paste these inside this path `app/public/upload`.
+</p>
+<p className="mb-5">
+  **Step 5 :** Also you need to copy previous installed history from your
+  previous version from backup folder. Go to
+  `app/backup/your_folder/source-code/storage/app/public` then copy the
+  installed file and paste it inside this path `app/storage/app/public`.
+</p>
+
+<p className="mb-3">
+  **Step 6 :** Now you need open your browser and visit your
+  `https://your_app/version/update`
+</p>
+<Card image>
+  <>![](/assets/update-one.png)</>
+</Card>
+<p className="mt-3 mb-5">
+  Here you have to provide admin info and login as an admin to go to the next
+  step.
+</p>
+
+<p className="mb-3">
+  **Step 7 :** Here is the last step to update the new version. Click `Confirm`
+  button to complete the update.
+</p>
+<Card image>
+  <>![](/assets/update-two.png)</>
+</Card>
+<p className="mt-3 mb-5">
+  Here you have to provide admin info and login as an admin to go to the next
+  step.
+</p>
+
+<h6 className="font-bold text-lg mt-2 mb-2 text-gray-950">Video Instruction</h6>
+<div className="border border-2 border-gray-300 rounded-md overflow-hidden">
+  <div className="relative pb-[56.25%] h-0">
+    <iframe
+      frameborder="0"
+      allowfullscreen
+      mozallowfullscreen
+      webkitallowfullscreen
+      src="https://www.loom.com/embed/76d8c1ed41114cb4847525a431bed201?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+      className=" absolute top-0 left-0 w-full h-full"
+    ></iframe>
+  </div>
+</div>
