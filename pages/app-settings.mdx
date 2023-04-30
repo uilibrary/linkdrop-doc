@@ -61,6 +61,57 @@ import { Card, Cards } from "nextra-theme-docs";
   <>![](/assets/pages/auth-settings.png)</>
 </Card>
 
+To create Google credentials for OAuth, you'll need to follow these steps:
+
+Go to the Google Cloud Console (https://console.cloud.google.com/) and create a new project by clicking on the project dropdown on the top left corner and then clicking on "New Project".
+
+<ul class="list-decimal pl-6 py-4">
+  <li className="py-1.5">
+    Once your project is created, go to the "APIs & Services" section from the
+    left-hand menu and click on "Credentials".
+  </li>
+  <li className="py-1.5">
+    On the Credentials page, click on "Create Credentials" and select "OAuth
+    client ID".
+  </li>
+  <li className="py-1.5">
+    Select the application type as "Web Application" or "Other non-interactive"
+    depending on the use case.
+  </li>
+  <li className="py-1.5">
+    Enter a name for your OAuth client ID and enter the authorized redirect URIs
+    for your application. The redirect URIs are the URLs to which Google will
+    redirect users after they grant/deny access to your application.
+  </li>
+  <li className="py-1.5">
+    Once you've entered all the required information, click on "Create".
+  </li>
+  <li className="py-1.5">
+    You should now see your newly created OAuth client ID. You can view the
+    client ID and secret by clicking on the "Edit" button next to the client ID.
+  </li>
+  <li className="py-1.5">Give your project a name and click on "Create".</li>
+</ul>
+
+<p>
+  That's it! You now have a Google credential for OAuth that you can use to
+  authenticate users and access Google APIs.
+</p>
+
+<h6 className="font-bold text-lg mt-2 mb-2 text-gray-950">Video Instruction</h6>
+<div className="border border-2 border-gray-300 rounded-md overflow-hidden">
+  <div className="relative pb-[56.25%] h-0">
+    <iframe
+      frameborder="0"
+      allowfullscreen
+      mozallowfullscreen
+      webkitallowfullscreen
+      src="https://www.loom.com/embed/23cb9b03a4dd4692a96c4856785928b2?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+      className=" absolute top-0 left-0 w-full h-full"
+    ></iframe>
+  </div>
+</div>
+
 ### SMTP Settings
 
 <p className="my-4">
