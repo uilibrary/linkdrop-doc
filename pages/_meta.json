@@ -1,9 +1,12 @@
 {
   "index": "Introduction",
-  "getting-started": "Getting Started",
-  "version-update": "Version Update",
-  "app-settings": "App Settings",
-  "payment-settings": "Payment Settings",
+  "installation": "Installation",
+  "global-settings": "Global Settings",
+  "smtp-settings": "SMTP Settings",
+  "payments-settings": "Payments Settings",
+  "google-login-system": "Google Login System",
   "pricing-management": "Pricing Management",
-  "video-instruction": "Video Instruction"
+  "home-page-settings": "Home Page Settings",
+  "faqs-answers": "FAQs and Answers",
+  "version-update": "Version Update"
 }
