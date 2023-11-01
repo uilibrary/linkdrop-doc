@@ -1,65 +1,125 @@
 ### Installation
 
-**Step 1:** Upload Project In Your Server.
+**Step 1:** Download Source Code.
 
-<p>
-  To install LinkDrop on your server, you first need to upload the source code.
-  This code can be downloaded as a zip file from the LinkDrop website. Once the
-  download is complete, you can upload the zip file to your server using a tool
-  like FTP. Once the file is uploaded, you can then extract the contents of the
-  zip file on your server. This can typically be done using a file manager or
-  command-line tools like unzip. With the files extracted, you can then proceed
-  to configure and customize LinkDrop according to your needs.
+<p className="flex item-center">
+  First, you need to purchase the LinkDrop from
+  [codecanyon](https://codecanyon.net/item/linkdrop-saas-link-management-tool/43555815).
+  After that, you have to download the source code as a zip file from there.
 </p>
 
-**Step 2:** Create a .env file
+**Step 2:** Upload Source Code.
+
+<p>
+  To install LinkDrop on your server, you first need to upload the zip file to
+  the server where you want to deploy the app. Once the file is uploaded, you
+  can then extract the contents of the zip file on your server. This can
+  typically be done using a file manager or command-line tools like unzip. With
+  the files extracted, you can then proceed to configure and customize LinkDrop
+  according to your needs.
+</p>
+
+**Step 3:** Create a .env file
 
 <p>
   After extracting the LinkDrop source code on your server, the next step is to
   create a .env file. This is a simple process, as you will find an .env.example
   file included in the extracted files. To create the .env file, simply make a
-  copy of the .env.example file and rename it to .env. Once you have done this,
-  you can then edit the file and add your own configurations and settings. The
-  .env file is an essential part of the LinkDrop setup, as it contains important
-  details such as database credentials, API keys, and other application
-  settings. By configuring this file correctly, you can ensure that LinkDrop
-  runs smoothly and securely on your server.
+  copy of the .env.example file and rename it to .env. The .env file is an
+  essential part of the LinkDrop setup, as it contains important details such as
+  database credentials, API keys, and other application settings. By configuring
+  this file correctly, you can ensure that LinkDrop runs smoothly and securely
+  on your server. Now you can browse your app by app domain.
 </p>
-
-<h6 className="font-bold text-lg mt-2 mb-2 text-gray-950">Video Instruction</h6>
-<div className="border border-2 border-gray-300 rounded-md overflow-hidden">
-  <div className="relative pb-[56.25%] h-0">
-    <iframe
-      frameborder="0"
-      allowfullscreen
-      mozallowfullscreen
-      webkitallowfullscreen
-      src="https://www.loom.com/embed/7645f419ada74992aae7ca59b5bc2a12?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
-      className=" absolute top-0 left-0 w-full h-full"
-    ></iframe>
-  </div>
-</div>
 
 ### Necessary Setup
 
 import { Card, Cards } from "nextra-theme-docs";
 
-<p className="mt-4">**Step 1:** First you need to create database</p>
 <p>
-  Before you can start using LinkDrop, you will need to create a database to
-  store its data. This is an important step in the installation process, as the
-  database details will be required to complete the necessary setup.
-  Fortunately, creating a database is a simple process and can be done using a
-  variety of tools and platforms. If you are unsure of how to create a database,
-  you can refer to the video instruction provided by LinkDrop, which will guide
-  you through the process step-by-step. The video will cover important details
-  such as database name, username, and password, which are all necessary for the
-  successful setup of LinkDrop. With your database created and configured, you
-  can then proceed to complete the LinkDrop installation and begin using its
-  powerful features.
+  But before completing other installation processes you will need to create a
+  database to store its data. After creating the database you have to collect
+  the database name, database user name, and database password. This is an
+  important step in the installation process, as the database details will be
+  required to complete the necessary setup. With your database created and
+  configured, you can then proceed to complete the LinkDrop installation and
+  begin using its powerful features.
 </p>
 
-<h6 className="font-bold text-lg mt-2 mb-2 text-gray-950">Video Instruction</h6>
+<p className="mt-8">**Step 1:** Server Requirements</p>
+<p className="mb-2">
+  Now you need to browse your app from browser by your app domain. You will see
+  some options to complete your app installation process. Here is the first one
+  where you will see the server requirements. If these requirements are
+  full-fill then you can go to the next step.
+</p>
+<>![](/assets/installation/step-1.png)</>
+
+<p className="mt-8">**Step 2:** App Settings</p>
+<p className="mb-2">
+  In this step, you can put your app name also you have to select your app
+  environment and app debug mode. Environment must be production and debug mode
+  must be false. If you want to generate a new app key then you can do it by
+  `Generate Key` button click.
+</p>
+<>![](/assets/installation/step-2.png)</>
+
+<p className="mt-8">**Step 3:** Database Connection</p>
+<p className="mb-2">
+  Here is the third step, from here you have to connect your database with your
+  app. Please put the database name, database username, and database password
+  then you need to check the database by `TEST CONNECTION` button click whether
+  the database is connected or not.
+</p>
+<>![](/assets/installation/step-3.png)</>
+
+<p className="mb-2">
+  If the database connection is established then you will see the success
+  message and you can go to the next step otherwise you can't go to the next
+  step and you will see the error message.
+</p>
+<>![](/assets/installation/step-4.png)</>
+
+<p className="mt-8">**Step 4:** Admin Setup</p>
+<p className="mb-2">
+  This is the admin setup step for your app. You can put your admin credentials
+  from here and save these through the `SAVE ADMIN INFO` button click.
+</p>
+<>![](/assets/installation/step-5.png)</>
+
+<p className="my-2">
+  After saving admin credentials, you will get a success message also you will
+  see a button to go to the next step.
+</p>
+<>![](/assets/installation/step-6.png)</>
+
+<p className="mt-8">**Step 5:** Installation</p>
+<p className="mb-2">
+  Now here is the final step. By completing this step your installation will be
+  complete. But before completing installation you have to verify your purchase
+  key first.
+</p>
+<>![](/assets/installation/step-7.png)</>
+
+<p className="my-2">
+  If your purchase key is verified, you will get a success message also you will
+  see the "CONFIRM" button for click to complete the installation process.
+</p>
+<>![](/assets/installation/step-8.png)</>
+
+<p className="my-2">
+  After clicking the confirm button your installation will be start. It will
+  take a few seconds.
+</p>
+<>![](/assets/installation/step-9.png)</>
+
+<p className="my-2">
+  When your app installation is complete you will see the success message.
+  That's it, your installation processes have been completed now.
+</p>
+<>![](/assets/installation/finish.png)</>
+
+<h6 className="font-bold text-lg mt-8 mb-2 text-gray-950">Video Instruction</h6>
 <div className="border border-2 border-gray-300 rounded-md overflow-hidden">
   <div className="relative pb-[56.25%] h-0">
     <iframe
@@ -68,84 +128,6 @@ import { Card, Cards } from "nextra-theme-docs";
       mozallowfullscreen
       webkitallowfullscreen
       src="https://www.loom.com/embed/7fd0366cf09048ae934ba05ffd831300?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
-      className=" absolute top-0 left-0 w-full h-full"
-    ></iframe>
-  </div>
-</div>
-<p className="mt-4">
-  After creating the database, you have to collect and save it anywhere the
-  database name, database username, and database password. In my case, I have
-  saved this info in Notepad, which I have shown in the video instruction.
-</p>
-
-<p className="mt-4">
-  **Step 2:** When successfully done the database creation, open your app url in
-  your browser then got to the `/setup` route. Example
-  `https://your-domain.com/setup` then you will see the below page. If all
-  requirement is correct then you will see the correct checkmark on the right
-  side. Now click the `Next Step` button to go to next step.
-</p>
-
-<Card image>
-  <>![](/assets/installer-one.png)</>
-</Card>
-
-<p className="mt-6 mb-3">
-  **Step 3:** Now here you will see the Application Name, Environment, App
-  debug, and App key. Environment by default local selected, you have to change
-  it and select production. Then app debug true selected but it should be false.
-  After that app key, if you want to change app key then you have to click
-  `Generate Key` button. Now click `Next Step` button to go to next step.
-</p>
-
-<Card image>
-  <>![](/assets/installer-two.png)</>
-</Card>
-
-<p className="mt-6 mb-3">
-  **Step 4:** In this step, you have to provide the database name, database
-  username, and database password. After that, you check whether the database
-  info is correct or wrong. To check this you have to click the `Test
-  Connection` button.
-</p>
-
-<Card image>
-  <>![](/assets/installer-three.png)</>
-</Card>
-
-<p className="mt-4 mb-3">
-  If the database connection is correct then you will the `Seems Ok`. Now click
-  `Next Step` button to go to next step.
-</p>
-
-<Card image>
-  <>![](/assets/installer-four.png)</>
-</Card>
-
-<p className="mt-6 mb-3">
-  **Step 5:** When you will navigate here then you have done all the previous
-  steps successfully. Now you need to click `Confirm` button to complete the
-  installation of your app.
-</p>
-
-<Card image>
-  <>![](/assets/installer-five.png)</>
-</Card>
-
-<p className="mt-6 mb-3">
-  Congratulations, you have successfully setup your app configuration. If you
-  need more helpful resources then you can follow the video instruction below.
-</p>
-
-<h6 className="font-bold text-lg mt-2 mb-2 text-gray-950">Video Instruction</h6>
-<div className="border border-2 border-gray-300 rounded-md overflow-hidden">
-  <div className="relative pb-[56.25%] h-0">
-    <iframe
-      frameborder="0"
-      allowfullscreen
-      mozallowfullscreen
-      webkitallowfullscreen
-      src="https://www.loom.com/embed/e73aa88814ad43cb9fe794945bb81990?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
       className=" absolute top-0 left-0 w-full h-full"
     ></iframe>
   </div>

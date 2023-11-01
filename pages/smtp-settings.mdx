@@ -1,0 +1,37 @@
+import { Card, Cards } from "nextra-theme-docs";
+
+### Overview
+
+<p className="my-4">
+  SMTP settings are important for any application that requires sending out
+  email notifications or alerts. In your app, you can configure SMTP settings to
+  ensure that emails are delivered successfully. By providing accurate SMTP
+  settings, your application can authenticate and establish a secure connection
+  with the email service provider, making it easier to send out emails reliably.
+  Additionally, you can configure other settings such as email encryption, port
+  numbers, and message throttling to further customize your SMTP settings
+  according to your needs. Overall, proper SMTP settings can help ensure that
+  your application's emails are delivered successfully and enhance the user.
+</p>
+
+### SMTP Setup
+
+<p className="my-4">
+  If you don't set up SMTP then when a user tries to register by email then
+  email verification mail will not sent to verify their email. It means new user
+  registration will not work without an SMTP setup. So it is very very important
+  and one of the most required settings for your application. So you must have
+  to setup this setting to enable new user registration of your app.
+</p>
+
+<Card image>
+  <>![](/assets/pages/smtp-settings.png)</>
+</Card>
+
+<p className="mt-4">
+  After entering all the SMTP credentials when you click the save button then
+  SMTP connection will be checked whether it is connected or not. If the SMTP
+  connection is established successfully then you will get a success message and
+  SMTP credentials will be saved other wise you will get an error message and
+  SMTP credentials not will save.
+</p>
