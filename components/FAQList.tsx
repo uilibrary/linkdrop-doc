@@ -20,7 +20,7 @@ const FAQList = () => {
         <div key={ind} className="rounded-md overflow-hidden shadow">
           <button
             onClick={() => collapseHandler(ind)}
-            className="w-full p-4 text-start bg-blue-50 relative font-medium"
+            className="w-full p-4 text-start bg-blue-50 dark:bg-gray-900 relative font-medium"
           >
             {faq.question}
             <ArrowRight
@@ -30,7 +30,7 @@ const FAQList = () => {
             />
           </button>
           <Collapse isOpened={collapse === ind ? true : false}>
-            <div className="border-t border-blue-500 bg-gray-100 p-4">
+            <div className="border-t border-blue-500 bg-gray-100 dark:bg-gray-800 p-4">
               <p>{faq.answer}</p>
             </div>
           </Collapse>
