@@ -1,0 +1,58 @@
+import Card from "@/components/card";
+
+### Overview
+
+<p className="my-4">
+  Here you will see the all-created pricing plan list. Also, you can create a
+  new pricing plan. Creating subscription plans is an essential step in setting
+  up your application, as it enables you to offer different pricing options to
+  your users based on their needs. To create subscription plans, you can
+  navigate to the Pricing Management page in your application and click on the
+  `Create Plan` button.
+</p>
+<Card>
+  <>![](/assets/pricing-plan/01-plans.png)</>
+</Card>
+
+<p className="my-4">
+  When you navigate to the Pricing Plan Creation page, you'll need to provide the `Stripe Product ID` and `Stripe Product Price ID`. To do this, first create a product and its associated price in your Stripe account via the Stripe Dashboard. Once the product and price are set up, simply copy the `Product ID` and `Price ID`, then paste them here. The application will automatically fetch all relevant details from the Stripe product, including price, title, description, currency, billing interval, and more.
+</p>
+
+<Card>
+  <>![](/assets/pricing-plan/02-plan-create.png)</>
+</Card>
+
+<p className="my-4">
+  After creating a pricing plan by providing the `Stripe Product ID` and `Stripe Price ID`, you will be redirected to the Pricing Plans page. On this page, you’ll see the newly created plan displayed, along with its details and associated information.
+</p>
+
+<Card>
+  <>![](/assets/pricing-plan/03-plans-show.png)</>
+</Card>
+
+
+### Add Plan Features
+
+<p className="my-4">
+  After completing the creation of a pricing plan, you need to add features to it. Simply click the Add Features button, and you will be redirected to the Feature Adding page.
+</p>
+<Card>
+  <>![](/assets/pricing-plan/04-plan-feature.png)</>
+</Card>
+
+<p className="my-4">
+  Finally, you will see that your pricing plan has been successfully completed, including both payment and feature details.
+</p>
+<Card>
+  <>![](/assets/pricing-plan/05-plans-show.png)</>
+</Card>
+
+### Plan Update
+
+<p className="my-4">
+  If you want to update any created plan you can do it easily. Go to the pricing
+  plan page where you will see all of your created plans. From here you can go
+  to the edit plan page by clicking the "Edit Plan" button.
+</p>
+
+

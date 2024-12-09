@@ -1,0 +1,7 @@
+{
+  "index": "Overview",
+  "global": "Global Settings",
+  "smtp": "SMTP Settings",
+  "google-auth": "Google Auth Settings",
+  "stripe": "Stripe Settings"
+}
