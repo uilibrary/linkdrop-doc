@@ -1,6 +1,6 @@
 ### Installation
 
-**Step 1:** Download Source Code.
+##### **Step 1:** Download Source Code.
 
 <p className="flex item-center">
   First, you need to purchase the LinkDrop from
@@ -8,28 +8,34 @@
   After that, you have to download the source code as a zip file from there.
 </p>
 
-**Step 2:** Upload Source Code.
+##### **Step 2:** Upload Source Code.
 
 <p>
-  To install LinkDrop on your server, you first need to upload the zip file to
-  the server where you want to deploy the app. Once the file is uploaded, you
-  can then extract the contents of the zip file on your server. This can
-  typically be done using a file manager or command-line tools like unzip. With
-  the files extracted, you can then proceed to configure and customize LinkDrop
-  according to your needs.
+  To install LinkDrop on your server, follow these steps:
 </p>
 
-**Step 3:** Create a .env file
+<div className="steps-container pt-4">
+  <ol className='pl-6 list-disc'>
+    <li>Upload the zip file to the server where you want to deploy the app</li>
+    <li>Extract the contents of the zip file on your server</li>
+    <li>Proceed to configure LinkDrop after extraction is complete</li>
+  </ol>
+</div>
+
+##### **Step 3:** Create a .env file
 
 <p>
-  After extracting the LinkDrop source code on your server, the next step is to
-  create a .env file. This is a simple process, as you will find an .env.example
-  file included in the extracted files. To create the .env file, simply make a
-  copy of the .env.example file and rename it to .env. The .env file is an
-  essential part of the LinkDrop setup, as it contains important details such as
-  database credentials, API keys, and other application settings. By configuring
-  this file correctly, you can ensure that LinkDrop runs smoothly and securely
-  on your server. Now you can browse your app by app domain.
+  After extracting the LinkDrop source code on your server, you need to create an environment configuration file:
+</p>
+
+<div className="steps-container py-4">
+  <ol className='pl-6 list-disc'>
+    <li>Locate the .env.example file in the root directory of your extracted files</li>
+    <li>Make a copy of this file and rename it to .env</li>
+  </ol>
+</div>
+<p>
+  After creating .env file, you need to browse your application using your domain to complete the other critical configuration including database setup, app settings, etc.
 </p>
 
 ### Necessary Setup
@@ -46,7 +52,7 @@ import { Card, Cards } from "nextra-theme-docs";
   begin using its powerful features.
 </p>
 
-<p className="mt-8">**Step 1:** Server Requirements</p>
+##### **Step 1:** Server Requirements
 <p className="mb-2">
   Now you need to browse your app from browser by your app domain. You will see
   some options to complete your app installation process. Here is the first one
@@ -55,7 +61,7 @@ import { Card, Cards } from "nextra-theme-docs";
 </p>
 <>![](/assets/installation/step-1.png)</>
 
-<p className="mt-8">**Step 2:** App Settings</p>
+##### **Step 2:** App Settings
 <p className="mb-2">
   In this step, you can put your app name also you have to select your app
   environment and app debug mode. Environment must be production and debug mode
@@ -64,7 +70,7 @@ import { Card, Cards } from "nextra-theme-docs";
 </p>
 <>![](/assets/installation/step-2.png)</>
 
-<p className="mt-8">**Step 3:** Database Connection</p>
+##### **Step 3:** Database Connection
 <p className="mb-2">
   Here is the third step, from here you have to connect your database with your
   app. Please put the database name, database username, and database password
@@ -80,7 +86,7 @@ import { Card, Cards } from "nextra-theme-docs";
 </p>
 <>![](/assets/installation/step-4.png)</>
 
-<p className="mt-8">**Step 5:** Installation</p>
+##### **Step 5:** Installation
 <p className="mb-2">
   Now here is the final step. By completing this step your installation will be
   complete.
