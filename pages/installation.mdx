@@ -28,7 +28,7 @@
   After extracting the LinkDrop source code on your server, you need to create an environment configuration file:
 </p>
 
-<div className="steps-container py-4">
+<div className="steps-container">
   <ol className='pl-6 list-disc'>
     <li>Locate the .env.example file in the root directory of your extracted files</li>
     <li>Make a copy of this file and rename it to .env</li>
@@ -38,9 +38,52 @@
   After creating .env file, you need to browse your application using your domain to complete the other critical configuration including database setup, app settings, etc.
 </p>
 
-### Necessary Setup
+##### **Step 4:** Enable symlink() PHP Function
 
-import { Card, Cards } from "nextra-theme-docs";
+<p>
+  If you're using shared hosting, you'll need to enable the symlink() PHP function for proper application functionality.
+</p>
+
+> If the symlink() function is already enabled on your server, you can skip this step.
+
+<p className="mt-4 font-medium">
+  Here are common methods to enable it:
+</p>
+<div className="steps-container">
+  <ol className='pl-6 list-decimal'>
+    <li>
+      <p>Through cPanel:</p>
+      <ul className='pl-6 list-disc'>
+        <li>Log in to your cPanel account</li>
+        <li>Navigate to 'Select PHP Version' or 'PHP Settings'</li>
+        <li>Look for 'symlink' in the list of PHP extensions</li>
+        <li>Enable the checkbox next to it</li>
+        <li>Save the changes</li>
+      </ul>
+    </li>
+    <li>
+      <p>Through PHP.ini (if you have access):</p>
+      <ul className='pl-6 list-disc'>
+        <li>Create or edit php.ini in your root directory</li>
+        <li>Add the line: <code>enable_function = symlink</code></li>
+        <li>Save the file and restart PHP if required</li>
+      </ul>
+    </li>
+    <li>
+      <p>Through Hosting Support:</p>
+      <ul className='pl-6 list-disc'>
+        <li>Contact your hosting provider's support team</li>
+        <li>Request them to enable the symlink() PHP function</li>
+        <li>Specify it's needed for Laravel application</li>
+        <li>Wait for their confirmation</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+
+
+
+### Necessary Setup
 
 <p>
   But before completing other installation processes you will need to create a
@@ -86,105 +129,28 @@ import { Card, Cards } from "nextra-theme-docs";
 </p>
 <>![](/assets/installation/step-4.png)</>
 
+##### **Step 4:** Admin Setup
+<p className="mb-2">
+  In this step, you need to create your admin account by providing your name, email,
+  and password. This account will be used to access the admin dashboard after installation.
+  Make sure to use a strong password and keep these credentials safe as they will be
+  required for future admin access.
+</p>
+<>![](/assets/installation/step-5.png)</>
+
+
 ##### **Step 5:** Installation
 <p className="mb-2">
   Now here is the final step. By completing this step your installation will be
   complete.
 </p>
-<>![](/assets/installation/step-5.png)</>
+<>![](/assets/installation/install.png)</>
 
 <p className="my-2">
   When your app installation is complete you will see the success message.
   That's it, your installation processes have been completed now.
 </p>
 <>![](/assets/installation/finish.png)</>
-
-### Environment Variables Reference
-
-Below is a description of the environment variables used in LinkDrop:
-
-##### Application Settings
-- `APP_NAME`: The name of your application (default: "LinkDrop")
-- `APP_ENV`: Application environment (local, production, staging, etc.)
-- `APP_KEY`: Encryption key for your application (auto-generated)
-- `APP_DEBUG`: Enables debugging mode when set to true (set to false in production)
-- `APP_TIMEZONE`: Sets the application timezone
-- `APP_URL`: The base URL for your application
-
-##### Localization
-- `APP_LOCALE`: Default language for your application
-- `APP_FALLBACK_LOCALE`: Fallback language if the primary is unavailable
-- `APP_FAKER_LOCALE`: Locale setting for generating fake data
-
-##### Maintenance
-- `APP_MAINTENANCE_DRIVER`: Storage driver for maintenance mode
-- `PHP_CLI_SERVER_WORKERS`: Number of PHP CLI server workers
-- `BCRYPT_ROUNDS`: Security rounds for password hashing (higher is more secure but slower)
-
-##### Logging
-- `LOG_CHANNEL`: How logs are stored (daily, single, etc.)
-- `LOG_STACK`: Combined logging channels
-- `LOG_DEPRECATIONS_CHANNEL`: Channel for deprecation warnings
-- `LOG_LEVEL`: Minimum log level to record (debug, info, warning, error)
-
-##### Database
-- `DB_CONNECTION`: Database driver (mysql, pgsql, sqlite)
-- `DB_HOST`: Database server host
-- `DB_PORT`: Database server port
-- `DB_DATABASE`: Database name
-- `DB_USERNAME`: Database username
-- `DB_PASSWORD`: Database password
-
-##### Session
-- `SESSION_DRIVER`: Where session data is stored
-- `SESSION_LIFETIME`: Session timeout in minutes
-- `SESSION_ENCRYPT`: Whether to encrypt session data
-- `SESSION_PATH`: Cookie path for sessions
-- `SESSION_DOMAIN`: Domain for session cookies
-
-##### Services
-- `BROADCAST_CONNECTION`: Broadcasting connection for real-time events
-- `FILESYSTEM_DISK`: Default storage disk
-- `QUEUE_CONNECTION`: Queue system for background processing
-- `CACHE_STORE`: Where cache data is stored
-- `CACHE_PREFIX`: Prefix for cache keys
-
-##### External Services
-- `MEMCACHED_HOST`: Memcached server address
-- `REDIS_CLIENT`: Redis client library
-- `REDIS_HOST`: Redis server address
-- `REDIS_PASSWORD`: Redis server password
-- `REDIS_PORT`: Redis server port
-
-##### Mail
-- `MAIL_MAILER`: Mail sending driver
-- `MAIL_HOST`: Mail server host
-- `MAIL_PORT`: Mail server port
-- `MAIL_USERNAME`: Mail server username
-- `MAIL_PASSWORD`: Mail server password
-- `MAIL_ENCRYPTION`: Mail encryption method
-- `MAIL_FROM_ADDRESS`: Default sender email address
-- `MAIL_FROM_NAME`: Default sender name
-
-##### AWS
-- `AWS_ACCESS_KEY_ID`: AWS access key
-- `AWS_SECRET_ACCESS_KEY`: AWS secret key
-- `AWS_DEFAULT_REGION`: AWS region
-- `AWS_BUCKET`: AWS S3 bucket name
-- `AWS_USE_PATH_STYLE_ENDPOINT`: Use path-style S3 endpoints
-
-##### Vite
-- `VITE_APP_NAME`: Application name for Vite
-
-##### Payment Processing
-- `STRIPE_KEY`: Stripe publishable key
-- `STRIPE_SECRET`: Stripe secret key
-- `STRIPE_WEBHOOK_SECRET`: Secret for validating Stripe webhooks
-
-##### Authentication
-- `GOOGLE_CLIENT_ID`: Google OAuth client ID
-- `GOOGLE_CLIENT_SECRET`: Google OAuth client secret
-- `GOOGLE_REDIRECT_URI`: Redirect URL after Google authentication
 
 
 ### Video Instruction

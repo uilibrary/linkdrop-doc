@@ -1,0 +1,86 @@
+# Environment Variables Reference
+
+Below is a description of the environment variables used in LinkDrop:
+
+##### Application Settings
+- `APP_NAME`: The name of your application (default: "LinkDrop")
+- `APP_ENV`: Application environment (local, production, staging, etc.)
+- `APP_KEY`: Encryption key for your application (auto-generated)
+- `APP_DEBUG`: Enables debugging mode when set to true (set to false in production)
+- `APP_TIMEZONE`: Sets the application timezone
+- `APP_URL`: The base URL for your application
+
+##### Localization
+- `APP_LOCALE`: Default language for your application
+- `APP_FALLBACK_LOCALE`: Fallback language if the primary is unavailable
+- `APP_FAKER_LOCALE`: Locale setting for generating fake data
+
+##### Maintenance
+- `APP_MAINTENANCE_DRIVER`: Storage driver for maintenance mode
+- `PHP_CLI_SERVER_WORKERS`: Number of PHP CLI server workers
+- `BCRYPT_ROUNDS`: Security rounds for password hashing (higher is more secure but slower)
+
+##### Logging
+- `LOG_CHANNEL`: How logs are stored (daily, single, etc.)
+- `LOG_STACK`: Combined logging channels
+- `LOG_DEPRECATIONS_CHANNEL`: Channel for deprecation warnings
+- `LOG_LEVEL`: Minimum log level to record (debug, info, warning, error)
+
+##### Database
+- `DB_CONNECTION`: Database driver (mysql, pgsql, sqlite)
+- `DB_HOST`: Database server host
+- `DB_PORT`: Database server port
+- `DB_DATABASE`: Database name
+- `DB_USERNAME`: Database username
+- `DB_PASSWORD`: Database password
+
+##### Session
+- `SESSION_DRIVER`: Where session data is stored
+- `SESSION_LIFETIME`: Session timeout in minutes
+- `SESSION_ENCRYPT`: Whether to encrypt session data
+- `SESSION_PATH`: Cookie path for sessions
+- `SESSION_DOMAIN`: Domain for session cookies
+
+##### Services
+- `BROADCAST_CONNECTION`: Broadcasting connection for real-time events
+- `FILESYSTEM_DISK`: Default storage disk
+- `QUEUE_CONNECTION`: Queue system for background processing
+- `CACHE_STORE`: Where cache data is stored
+- `CACHE_PREFIX`: Prefix for cache keys
+
+##### External Services
+- `MEMCACHED_HOST`: Memcached server address
+- `REDIS_CLIENT`: Redis client library
+- `REDIS_HOST`: Redis server address
+- `REDIS_PASSWORD`: Redis server password
+- `REDIS_PORT`: Redis server port
+
+##### Mail
+- `MAIL_MAILER`: Mail sending driver
+- `MAIL_HOST`: Mail server host
+- `MAIL_PORT`: Mail server port
+- `MAIL_USERNAME`: Mail server username
+- `MAIL_PASSWORD`: Mail server password
+- `MAIL_ENCRYPTION`: Mail encryption method
+- `MAIL_FROM_ADDRESS`: Default sender email address
+- `MAIL_FROM_NAME`: Default sender name
+
+##### AWS
+- `AWS_ACCESS_KEY_ID`: AWS access key
+- `AWS_SECRET_ACCESS_KEY`: AWS secret key
+- `AWS_DEFAULT_REGION`: AWS region
+- `AWS_BUCKET`: AWS S3 bucket name
+- `AWS_USE_PATH_STYLE_ENDPOINT`: Use path-style S3 endpoints
+
+##### Vite
+- `VITE_APP_NAME`: Application name for Vite
+
+##### Payment Processing
+- `STRIPE_KEY`: Stripe publishable key
+- `STRIPE_SECRET`: Stripe secret key
+- `STRIPE_WEBHOOK_SECRET`: Secret for validating Stripe webhooks
+
+##### Authentication
+- `GOOGLE_CLIENT_ID`: Google OAuth client ID
+- `GOOGLE_CLIENT_SECRET`: Google OAuth client secret
+- `GOOGLE_REDIRECT_URI`: Redirect URL after Google authentication
