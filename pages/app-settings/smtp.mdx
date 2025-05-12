@@ -3,37 +3,48 @@ import Card from "@/components/card";
 ### Overview
 
 <p className="my-4">
-  SMTP settings are important for any application that requires sending out
-  email notifications or alerts. In your app, you can configure SMTP settings to
-  ensure that emails are delivered successfully. By providing accurate SMTP
-  settings, your application can authenticate and establish a secure connection
-  with the email service provider, making it easier to send out emails reliably.
-  Additionally, you can configure other settings such as email encryption, port
-  numbers, and message throttling to further customize your SMTP settings
-  according to your needs. Overall, proper SMTP settings can help ensure that
-  your application's emails are delivered successfully and enhance the user.
+  SMTP (Simple Mail Transfer Protocol) is essential for sending emails from your application. Without proper SMTP setup, important features like email verification, password reset, and notifications won't work. This guide will help you configure SMTP settings correctly.
 </p>
 
-### SMTP Setup
+##### Why SMTP Setup is Important
 
 <p className="my-4">
-  If you don't set up SMTP then when a user tries to register by email then
-  email verification mail will not sent to verify their email. It means new user
-  registration will not work without an SMTP setup. So it is very very important
-  and one of the most required settings for your application. So you must have
-  to setup this setting to enable new user registration of your app.
+  - User Registration: New users won't be able to verify their email addresses
+  - Password Reset: Users can't receive password reset links
+  - Notifications: System notifications and alerts won't be delivered
+  - Account Security: Email-based security features won't function
 </p>
+
+##### Getting SMTP Credentials from Shared Hosting
+
+<p className="my-4">
+Follow these steps to get SMTP credentials from your shared hosting:
+
+1. **Login to cPanel**: Access your hosting control panel
+2. **Find Email Section**: Look for "Email Accounts" or "Email Tools"
+3. **Get SMTP Details**:
+   - SMTP Host: Usually server email like `mail.yourdomain.com` or `smtp.yourdomain.com`
+   - SMTP Port: Typically 465 (SSL) or 587 (TLS)
+   - Username: Your full email address (e.g., `info@yourdomain.com`)
+   - Password: Your email account password
+
+> Popular hosting providers like cPanel usually display these settings in the Email Configuration section. If you can't find it, you can contact your hosting provider's support team for assistance.
+</p>
+
+##### Configuring SMTP Settings
 
 <Card>
   <>![](/assets/settings/smtp-settings.png)</>
 </Card>
 
 <p className="mt-4">
-  After entering all the SMTP credentials when you click the save button then
-  SMTP connection will be checked whether it is connected or not. If the SMTP
-  connection is established successfully then you will get a success message and
-  SMTP credentials will be saved other wise you will get an error message and
-  SMTP credentials not will save.
+Enter your SMTP credentials in the settings form:
+
+1. Fill in all required fields (Host, Port, Username, Password)
+2. Click the Save button
+3. The system will test the connection automatically
+4. You'll see a success message if the connection works
+5. If there's an error, double-check your credentials
 </p>
 
 ### Video Instruction

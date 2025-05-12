@@ -1,58 +1,90 @@
 import Card from "@/components/card";
 
-### Overview
+### Pricing Management
 
 <p className="my-4">
-  Here you will see the all-created pricing plan list. Also, you can create a
-  new pricing plan. Creating subscription plans is an essential step in setting
-  up your application, as it enables you to offer different pricing options to
-  your users based on their needs. To create subscription plans, you can
-  navigate to the Pricing Management page in your application and click on the
-  `Create Plan` button.
+  Create and manage subscription plans for your application. Set up different pricing tiers with custom features to meet your users' needs and maximize revenue.
 </p>
-<Card>
+
+##### Creating a New Plan
+
+1. Navigate to Pricing Management and click `Create Plan`
+2. First, create a product and price in your Stripe Dashboard:
+   1. Go to [Stripe Dashboard](https://dashboard.stripe.com/products)
+   2. Click `Add Product`
+   3. Fill in product details (name, description)
+   4. Set pricing information:
+      - Amount and currency
+      - Billing period (monthly/yearly)
+      - Trial period (if any)
+   5. Save the product
+
+3. Get the required IDs from Stripe:
+   - **Product ID**: Find under product details (starts with 'prod_')
+   - **Price ID**: Find under pricing details (starts with 'price_')
+
+> **Note**: Create the product in Stripe first, then use its IDs in LinkDrop
+
+<Card className="mt-4">
   <>![](/assets/pricing-plan/01-plans.png)</>
 </Card>
 
+##### Plan Configuration
+
 <p className="my-4">
-  When you navigate to the Pricing Plan Creation page, you'll need to provide the `Stripe Product ID` and `Stripe Product Price ID`. To do this, first create a product and its associated price in your Stripe account via the Stripe Dashboard. Once the product and price are set up, simply copy the `Product ID` and `Price ID`, then paste them here. The application will automatically fetch all relevant details from the Stripe product, including price, title, description, currency, billing interval, and more.
+When you add Stripe IDs, the system automatically imports:
+- Product name and description
+- Price and currency
+- Billing interval (monthly/yearly)
+- Trial period settings
 </p>
 
 <Card>
   <>![](/assets/pricing-plan/02-plan-create.png)</>
 </Card>
 
-<p className="my-4">
-  After creating a pricing plan by providing the `Stripe Product ID` and `Stripe Price ID`, you will be redirected to the Pricing Plans page. On this page, you’ll see the newly created plan displayed, along with its details and associated information.
-</p>
-
-<Card>
-  <>![](/assets/pricing-plan/03-plans-show.png)</>
-</Card>
-
-
-### Add Plan Features
+##### Managing Plan Features
 
 <p className="my-4">
-  After completing the creation of a pricing plan, you need to add features to it. Simply click the Add Features button, and you will be redirected to the Feature Adding page.
+Customize what each plan offers:
+
+1. Create the basic plan with Stripe details
+2. Click `Add Features` on your plan
+3. Define features like:
+   - Number of links allowed
+   - Custom domains
+   - Analytics access
+   - Team member limits
 </p>
+
 <Card>
   <>![](/assets/pricing-plan/04-plan-feature.png)</>
 </Card>
 
+##### Reviewing Plans
+
 <p className="my-4">
-  Finally, you will see that your pricing plan has been successfully completed, including both payment and feature details.
+After setup, you can view all plans with their:
+- Price and billing details
+- Included features
+- Status (active/inactive)
+- Number of subscribers
 </p>
+
 <Card>
   <>![](/assets/pricing-plan/05-plans-show.png)</>
 </Card>
 
-### Plan Update
+##### Updating Plans
 
 <p className="my-4">
-  If you want to update any created plan you can do it easily. Go to the pricing
-  plan page where you will see all of your created plans. From here you can go
-  to the edit plan page by clicking the "Edit Plan" button.
+Modify existing plans anytime:
+
+1. Go to Pricing Management
+2. Find the plan you want to change
+3. Click `Edit Plan`
+4. Update features or settings
+5. Save changes
+
+> **Important**: Changes to existing plans won't affect current subscribers until their next billing cycle
 </p>
-
-

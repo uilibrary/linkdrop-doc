@@ -3,16 +3,29 @@ import Card from "@/components/card";
 ### Overview
 
 <p className="mt-6 mb-3">
-  Payment settings is the most important and sensitive things. You should setup
-  it very carefully. You will the the six payment gateway option to setup your
-  payment system. From this section, you can activate or deactivate these
-  payment gateways based on your preferences. If you choose to activate them,
-  you will need to provide certain payment information such as api key, api
-  secret and other relevant payment details. By providing accurate payment
-  information, you can ensure that users can pay for goods or services
-  conveniently and securely. By configuring these settings properly, you can
-  provide a seamless payment experience for your users and boost customer
-  satisfaction.
+  Configure your payment system to securely process transactions through Stripe. This integration enables you to accept payments from customers worldwide using various payment methods like credit cards, digital wallets, and bank transfers.
+</p>
+
+##### Why Choose Stripe?
+
+<p className="my-4">
+  - Secure Payments: Bank-level security for all transactions
+  - Global Reach: Accept payments in 135+ currencies
+  - Multiple Payment Methods: Credit cards, Apple Pay, Google Pay, and more
+  - Detailed Analytics: Track transactions and revenue in real-time
+</p>
+
+##### Required Credentials
+
+<p className="my-4">
+To set up Stripe payments, you'll need:
+
+1. **API Key**: Your public publishable key
+2. **API Secret**: Your private secret key
+3. **Webhook Secret**: For handling Stripe events (optional)
+
+> **Security Note**: Always keep your API Secret key confidential and never expose it to others.
+
 </p>
 
 <Card>
